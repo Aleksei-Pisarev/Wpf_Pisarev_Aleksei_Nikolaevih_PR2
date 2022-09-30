@@ -14,6 +14,7 @@
             <MenuItem Header="_Файл">
                 <Button Content="Открыть" Click="Button2_Click"  />
                 <Button x:Name="Save" Content="Сохранить" Click="Button1_Click" />
+                <Button x:Name="Win1" Content="Сохранить" Click="Button4_Click" />
                 <Separator/>
                 <Button Content="Закрыть" Click="OnCloseClicked" />
             </MenuItem>

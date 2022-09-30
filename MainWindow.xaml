@@ -1,0 +1,48 @@
+﻿<Window x:Class="Wpf_Pisarev_Aleksei_Nikolaevih_PR2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Pisarev_Aleksei_Nikolaevih_PR2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="721.951" Width="948.152">
+    <Grid Margin="0,0,2,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu Background="White" BorderBrush="White" BorderThickness="1" Margin="23,10,35,646">
+            <MenuItem Header="_Файл">
+                <Button Content="Открыть" Click="Button2_Click"  />
+                <Button x:Name="Save" Content="Сохранить" Click="Button1_Click" />
+                <Separator/>
+                <Button Content="Закрыть" Click="OnCloseClicked" />
+            </MenuItem>
+            <MenuItem Header="_Справка">
+                <MenuItem Header="_Просмотреть справку"/>
+                <Button Content="О программе" Click="Button3_Click"  />
+
+            </MenuItem>
+            <MenuItem Header="_Окно">
+                <Button x:Name="c1" Content="Серая" Background="Gray" Click="Click_1_Click"/>
+                <Button x:Name="c2" Content="Черная" Background="Black" Click="Click_2_Click"/>
+                <Button x:Name="c3" Content="Синяя" Background="Blue" Click="Click_3_Click"/>
+            </MenuItem>
+        </Menu>
+        <ToolBar Margin="23,0,35,606" Height="40" VerticalAlignment="Bottom">
+
+            <Button Content="Открыть" Click="Button2_Click"  />
+            <Button Content="Сохранить" Click="Button1_Click" />
+
+            <Button Content="О программе" Click="Button3_Click"  />
+
+
+            <Button  Content="Серая" Background="Gray" Click="Click_1_Click"/>
+            <Button  Content="Черная" Background="Black" Click="Click_2_Click"/>
+            <Button  Content="Синяя" Background="Blue" Click="Click_3_Click"/>
+
+            <Button Content="Закрыть" Click="OnCloseClicked" />
+        </ToolBar>
+        <TextBox AcceptsReturn="True" x:Name="TextBox1" Margin="23,85,35,25" TextChanged="TextBox1_TextChanged" />
+        
+    </Grid>
+</Window>
